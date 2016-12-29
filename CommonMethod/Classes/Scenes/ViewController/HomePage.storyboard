@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guid View Controller-->
+        <scene sceneID="BSH-eZ-goa">
+            <objects>
+                <viewController storyboardIdentifier="LBGuidViewController" id="Jrj-Ms-HSD" customClass="LBGuidViewController" customModule="CommonMethod" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K9Q-ON-erE"/>
+                        <viewControllerLayoutGuide type="bottom" id="357-lS-mgq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zLe-EX-ehh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1Eq-fs-PGM">
+                                <rect key="frame" x="168" y="610" width="39" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-qU-Gay">
+                                <rect key="frame" x="147" y="560" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.70980392160000005" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="yr0-Hb-0fC"/>
+                                </constraints>
+                                <state key="normal" title="立即体验">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightNow:" destination="Jrj-Ms-HSD" eventType="touchUpInside" id="lxI-NA-uRQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Eq-fs-PGM" firstAttribute="centerX" secondItem="zLe-EX-ehh" secondAttribute="centerX" id="1D3-pG-zT8"/>
+                            <constraint firstItem="XOh-qU-Gay" firstAttribute="centerX" secondItem="zLe-EX-ehh" secondAttribute="centerX" id="FIr-aw-XbT"/>
+                            <constraint firstItem="1Eq-fs-PGM" firstAttribute="top" secondItem="XOh-qU-Gay" secondAttribute="bottom" constant="20" id="V3l-ma-Kow"/>
+                            <constraint firstItem="357-lS-mgq" firstAttribute="top" secondItem="1Eq-fs-PGM" secondAttribute="bottom" constant="20" id="x2I-Qf-Ukp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="1Eq-fs-PGM" id="FMx-zP-vL4"/>
+                        <outlet property="startButton" destination="XOh-qU-Gay" id="X14-tl-hg6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdI-FE-Fhu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-340"/>
+        </scene>
+        <!--Home Page Controller-->
+        <scene sceneID="2fs-7I-559">
+            <objects>
+                <viewController storyboardIdentifier="HomePageController" id="OCM-sg-QIv" customClass="HomePageController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovY-OY-Ghd"/>
+                        <viewControllerLayoutGuide type="bottom" id="RBf-Y5-edX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fIh-Zn-zcb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJy-i7-ntq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="-340"/>
+        </scene>
+        <!--Pop View Controller-->
+        <scene sceneID="UsJ-SA-bDC">
+            <objects>
+                <viewController storyboardIdentifier="PopViewController" id="Xpp-jx-1Ti" customClass="PopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PI6-TC-xiY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zna-nS-g9h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jUp-rq-ddD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdI-qQ-GMy">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRe-9V-RgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="ZI6-Y1-dDM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aRe-9V-RgN" firstAttribute="top" secondItem="GdI-qQ-GMy" secondAttribute="top" id="5tm-ex-3To"/>
+                                    <constraint firstItem="aRe-9V-RgN" firstAttribute="leading" secondItem="GdI-qQ-GMy" secondAttribute="leading" id="BJX-DN-iEo"/>
+                                    <constraint firstAttribute="bottom" secondItem="aRe-9V-RgN" secondAttribute="bottom" id="UyQ-BT-sNf"/>
+                                    <constraint firstItem="aRe-9V-RgN" firstAttribute="centerX" secondItem="GdI-qQ-GMy" secondAttribute="centerX" id="aJN-Mz-AoG"/>
+                                    <constraint firstAttribute="trailing" secondItem="aRe-9V-RgN" secondAttribute="trailing" id="hgN-We-Q2X"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GdI-qQ-GMy" secondAttribute="trailing" id="JZc-pi-Zaf"/>
+                            <constraint firstItem="Zna-nS-g9h" firstAttribute="top" secondItem="GdI-qQ-GMy" secondAttribute="bottom" id="ZhI-2t-gho"/>
+                            <constraint firstItem="GdI-qQ-GMy" firstAttribute="top" secondItem="PI6-TC-xiY" secondAttribute="bottom" id="rb0-SB-dSf"/>
+                            <constraint firstItem="GdI-qQ-GMy" firstAttribute="leading" secondItem="jUp-rq-ddD" secondAttribute="leading" id="sGO-2c-Ge5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentHeight" destination="ZI6-Y1-dDM" id="PUi-My-8md"/>
+                        <outlet property="mainScrollView" destination="GdI-qQ-GMy" id="uA4-pf-E20"/>
+                        <outlet property="scrollContentView" destination="aRe-9V-RgN" id="0Tx-TT-JDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIz-y6-Lf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="-1023"/>
+        </scene>
+        <!--图表-->
+        <scene sceneID="jrq-Qu-lwU">
+            <objects>
+                <viewController storyboardIdentifier="GradeController" title="图表" id="OU8-Ek-uAz" customClass="GradeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y72-hU-dbS"/>
+                        <viewControllerLayoutGuide type="bottom" id="WF7-NS-f99"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cxf-vg-BRG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-WL-IJC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OU8-Ek-uAz" id="zaA-mH-MeP"/>
+                                    <outlet property="delegate" destination="OU8-Ek-uAz" id="t6w-ir-jNh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v4x-WL-IJC" firstAttribute="top" secondItem="Y72-hU-dbS" secondAttribute="bottom" id="FTk-wB-6Pd"/>
+                            <constraint firstItem="WF7-NS-f99" firstAttribute="top" secondItem="v4x-WL-IJC" secondAttribute="bottom" id="I0m-jy-4gj"/>
+                            <constraint firstItem="v4x-WL-IJC" firstAttribute="leading" secondItem="cxf-vg-BRG" secondAttribute="leading" id="uuH-gn-sRa"/>
+                            <constraint firstAttribute="trailing" secondItem="v4x-WL-IJC" secondAttribute="trailing" id="x1f-Tm-Ocj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="图表" id="SL7-Pb-LhF"/>
+                    <connections>
+                        <outlet property="GradeTableview" destination="v4x-WL-IJC" id="oHc-vB-dli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8s-2E-UwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="-340"/>
+        </scene>
+    </scenes>
+</document>

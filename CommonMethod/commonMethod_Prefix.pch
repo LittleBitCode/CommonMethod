@@ -1,0 +1,39 @@
+//
+//  commonMethod_Prefix.pch
+//  CommonMethod
+//
+//  Created by littleBit on 2016/11/24.
+//  Copyright © 2016年 littleBit. All rights reserved.
+//
+#ifndef commonMethod_Prefix_pch
+#define commonMethod_Prefix_pch
+#import <UIKit/UIKit.h>
+#import "UIViewExt.h"
+#import "SynthesizeSingleton.h" //单例
+#import "LBHTTPRequest.h" //封装网络请求
+#import "LBAutoScrollLabel.h" //自动滚动label
+#import "LBMethods.h"  //常用方法
+#import "AppMacro_H.h" //自定义宏
+#import "MBProgressHUD+LB.h" //加载菊花
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h" //自动布局
+#import "BlocksKit.h"// block封装
+#import "UUChart.h"//图表
+#import "CMPopTipView.h"//弹出框
+#import "CustomPopOverView.h"//弹出
+#import "CommonMethod-Swift.h"
+#import "CommonMethod-Bridging-Header.h"
+#import "LBToAppStore.h"  //评价APP
+#import "NSString+Helper.h"//NSString Category
+#import "NSDictionary+Safe.h"
+#import "NSMutableDictionary+Safe.h"
+#import "NSArray+Safe.h"
+#import "NSMutableArray+Safe.h"
+#import "UIBarButtonItem+BarItem.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "SDWebImage-umbrella.h"
+#endif

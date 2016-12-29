@@ -1,0 +1,18 @@
+//
+//  GlobalVariable.h
+//  ForLove
+//
+//  Created by DMC on 12-8-23.
+//  Copyright (c) 2012年 DMC. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "SynthesizeSingleton.h"
+
+@interface GlobalVariable : NSObject
+
++ (instancetype) sharedGlobalVariable;
+
+@property (nonatomic,copy)NSString *adHtmlUrl;
+@property (nonatomic,copy)NSString *openUrl;
+@end
